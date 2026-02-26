@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amit Lev-Ari | Technical Portfolio</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        .glass { background: rgba(30, 41, 59, 0.5); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.1); }
+        .section-title { border-left: 4px solid #3b82f6; padding-left: 1rem; margin-bottom: 2rem; }
+        .card-hover:hover { transform: translateY(-5px); border-color: rgba(59, 130, 246, 0.5); background: rgba(30, 41, 59, 0.8); }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white font-sans pb-20">
+
+    <nav class="glass sticky top-0 z-50 p-4 mb-12 border-b border-slate-700">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <i data-lucide="terminal" class="text-blue-400 w-5 h-5"></i>
+                <span class="font-bold tracking-tighter text-lg">Amit Lev-Ari</span>
+            </div>
+            <div class="flex gap-4">
+                <a href="https://github.com/amitla2003" target="_blank" class="hover:text-blue-400 transition-colors">GitHub</a>
+            </div>
+        </div>
+    </nav>
+    <div class="max-w-6xl mx-auto px-6">
+        
+        <header class="text-center mb-16 flex flex-col items-center justify-center">
+            <h1 class="text-6xl font-extrabold tracking-tight mb-4">Technical Portfolio</h1>
+            <p class="text-blue-400 font-mono text-lg uppercase tracking-widest">Infrastructure • Security • Development</p>
+        </header>
+        <section class="mb-20">
+            <div class="section-title">
+                <h2 class="text-3xl font-bold">Networking</h2>
+                <p class="text-slate-400">Enterprise-grade infrastructure & routing simulations.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <a href="https://github.com/amitla2003/Networking-Lab" target="_blank" class="group">
+                    <div class="glass p-8 rounded-3xl transition-all card-hover shadow-2xl">
+                        <div class="bg-blue-600 p-4 rounded-2xl w-fit mb-6 shadow-lg shadow-blue-900/40">
+                            <i data-lucide="network" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">SMB Infrastructure Lab</h3>
+                        <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+                            Multi-area OSPF architecture featuring VLAN segmentation, NAT/PAT, and secure SSH management. Simulates a complete business network with centralized services.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="mb-20">
+            <div class="section-title">
+                <h2 class="text-3xl font-bold">Self-Hosting & DevOps</h2>
+                <p class="text-slate-400">Home-lab infrastructure and containerized service management.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="glass p-6 rounded-2xl card-hover transition-all">
+                    <div class="bg-purple-600 p-3 rounded-xl w-fit mb-4">
+                        <i data-lucide="server" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-lg">Nginx Proxy Manager</h3>
+                    <p class="text-slate-400 text-xs mt-2">SSL management and reverse proxy routing for secure service exposure.</p>
+                </div>
+
+                <div class="glass p-6 rounded-2xl card-hover transition-all">
+                    <div class="bg-blue-500 p-3 rounded-xl w-fit mb-4">
+                        <i data-lucide="cloud" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-lg">Seafile</h3>
+                    <p class="text-slate-400 text-xs mt-2">Private cloud storage with high-performance file syncing and E2EE.</p>
+                </div>
+
+                <div class="glass p-6 rounded-2xl card-hover transition-all">
+                    <div class="bg-orange-600 p-3 rounded-xl w-fit mb-4">
+                        <i data-lucide="image" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-lg">Immich</h3>
+                    <p class="text-slate-400 text-xs mt-2">Self-hosted photo/video backup solution managed via Docker-compose.</p>
+                </div>
+
+                <div class="glass p-6 rounded-2xl card-hover transition-all">
+                    <div class="bg-cyan-600 p-3 rounded-xl w-fit mb-4">
+                        <i data-lucide="container" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-lg">Portainer</h3>
+                    <p class="text-slate-400 text-xs mt-2">Container orchestration and lifecycle management for Docker microservices.</p>
+                </div>
+
+            </div>
+        </section>
+        <section class="mb-20">
+            <div class="section-title">
+                <h2 class="text-3xl font-bold">Cyber Security</h2>
+                <p class="text-slate-400">Security audits, hardening, and defensive implementations.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass p-8 rounded-3xl opacity-40 grayscale">
+                    <div class="bg-red-600 p-4 rounded-2xl w-fit mb-6">
+                        <i data-lucide="shield-alert" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-300">Project Pending</h3>
+                    <p class="text-slate-500 text-sm mt-2 italic">Future documentation on system hardening and penetration testing labs.</p>
+                </div>
+            </div>
+        </section>
+        <section class="mb-20">
+            <div class="section-title">
+                <h2 class="text-3xl font-bold">Programming</h2>
+                <p class="text-slate-400">Automation tools and software development projects.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass p-8 rounded-3xl opacity-40 grayscale">
+                    <div class="bg-green-600 p-4 rounded-2xl w-fit mb-6">
+                        <i data-lucide="code-2" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-300">Project Pending</h3>
+                    <p class="text-slate-500 text-sm mt-2 italic">Upcoming: Python automation scripts for network configuration management.</p>
+                </div>
+            </div>
+        </section>
+        </div>
+
+    <footer class="text-center p-10 border-t border-slate-800 text-slate-500 text-sm">
+        <p>&copy; 2026 Amit Lev-Ari. Built with Tailwind CSS and GitHub Pages.</p>
+    </footer>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
