@@ -1,14 +1,32 @@
-<nav class="glass sticky top-0 z-50 p-4 mb-12 border-b border-slate-700">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amit Lev-Ari | Technical Portfolio</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        .glass { background: rgba(30, 41, 59, 0.5); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.1); }
+        .section-title { border-left: 4px solid #3b82f6; padding-left: 1rem; margin-bottom: 2rem; }
+        .card-hover:hover { transform: translateY(-5px); border-color: rgba(59, 130, 246, 0.5); background: rgba(30, 41, 59, 0.8); }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white font-sans pb-20">
+
+    <nav class="glass sticky top-0 z-50 p-4 mb-12 border-b border-slate-700">
         <div class="max-w-6xl mx-auto flex justify-between items-center">
             <div class="flex items-center gap-2">
                 <i data-lucide="terminal" class="text-blue-400 w-5 h-5"></i>
                 <span class="font-bold tracking-tighter text-lg">Amit Lev-Ari</span>
             </div>
-            <div class="flex items-center gap-6">
+            <div class="flex items-center gap-6 text-sm font-medium">
                 <a href="https://github.com/amitla2003" target="_blank" class="flex items-center gap-2 hover:text-blue-400 transition-colors">
                     <i data-lucide="github" class="w-4 h-4"></i> GitHub
                 </a>
-                <a href="https://www.linkedin.com/in/amit-lev-ari-85972a378" target="_blank" class="flex items-center gap-2 hover:text-blue-400 transition-colors">
+                <a href="https://www.linkedin.com/in/YOUR_PROFILE" target="_blank" class="flex items-center gap-2 hover:text-blue-400 transition-colors">
                     <i data-lucide="linkedin" class="w-4 h-4"></i> LinkedIn
                 </a>
             </div>
@@ -18,11 +36,120 @@
     <div class="max-w-6xl mx-auto px-6">
         
         <header class="text-center mb-16 flex flex-col items-center justify-center max-w-3xl mx-auto">
-            <h1 class="text-6xl font-extrabold tracking-tight mb-4">Technical Portfolio</h1>
-            <p class="text-blue-400 font-mono text-lg uppercase tracking-widest mb-6">Infrastructure • Security • Development</p>
+            <h1 class="text-6xl font-extrabold tracking-tight mb-4">Cybersecurity Portfolio</h1>
+            <p class="text-blue-400 font-mono text-lg uppercase tracking-widest mb-8">Security Operations • Network Defense • Infrastructure</p>
             
-            <div class="glass p-6 rounded-2xl border-blue-500/20 text-slate-300 leading-relaxed">
-                <p>
-                    I am a Networking and Cybersecurity student at KERNELiOS, specializing in enterprise-scale infrastructure and secure system design. I bridge the gap between theoretical networking and real-world implementation through an extensive hands-on home lab environment, managing containerized services and high-availability systems.</p>
+            <div class="glass p-8 rounded-3xl border-blue-500/20 text-slate-300 leading-relaxed text-left shadow-2xl">
+                <p class="mb-4 text-lg">
+                    This is a portfolio of the technical projects I’m working on. Here you can find my personal projects—from building out full enterprise networking environments to managing my own server stack.</p>
+                <p class="mb-4">
+                    I’m a big believer in learning by doing, so I use this space to document how I’m applying infrastructure, networking and even programming fundamentals to solve real-world security and technical problems.</p>
+                <p class="text-blue-400 font-medium italic">
+                    Most of the tools that you will find here are tools I actually use on a regular basis!</p>
             </div>
         </header>
+
+        <section class="mb-20">
+            <div class="section-title">
+                <h2 class="text-3xl font-bold">Network Defense & Architecture</h2>
+                <p class="text-slate-400">Hardened infrastructure and enterprise routing simulations.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <a href="https://github.com/amitla2003/Networking-Lab" target="_blank" class="group">
+                    <div class="glass p-8 rounded-3xl transition-all card-hover shadow-2xl">
+                        <div class="bg-blue-600 p-4 rounded-2xl w-fit mb-6 shadow-lg shadow-blue-900/40">
+                            <i data-lucide="shield-check" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">Hardened SMB Infrastructure</h3>
+                        <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+                            A full-scale SMB network I built for my KERNELiOS final. I configured everything from the OSPF routing and VLANs to the NAT and secure SSH access. It’s my go-to environment for testing how traffic flows through a hardened business network.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="mb-20">
+            <div class="section-title">
+                <h2 class="text-3xl font-bold">SecOps & Linux Environments</h2>
+                <p class="text-slate-400">Daily-use server management and containerized service orchestration.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="glass p-6 rounded-2xl card-hover transition-all">
+                    <div class="bg-purple-600 p-3 rounded-xl w-fit mb-4">
+                        <i data-lucide="server" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-lg">Nginx Proxy Manager</h3>
+                    <p class="text-slate-400 text-xs mt-2">SSL management and secure reverse proxying for my personal service ecosystem.</p>
+                </div>
+
+                <div class="glass p-6 rounded-2xl card-hover transition-all">
+                    <div class="bg-blue-500 p-3 rounded-xl w-fit mb-4">
+                        <i data-lucide="cloud" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-lg">Seafile</h3>
+                    <p class="text-slate-400 text-xs mt-2">Private cloud storage with high-performance file syncing and E2EE for my data.</p>
+                </div>
+
+                <div class="glass p-6 rounded-2xl card-hover transition-all">
+                    <div class="bg-orange-600 p-3 rounded-xl w-fit mb-4">
+                        <i data-lucide="image" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-lg">Immich</h3>
+                    <p class="text-slate-400 text-xs mt-2">High-performance photo/video backup managed via Docker-compose stacks.</p>
+                </div>
+
+                <div class="glass p-6 rounded-2xl card-hover transition-all">
+                    <div class="bg-cyan-600 p-3 rounded-xl w-fit mb-4">
+                        <i data-lucide="container" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-lg">Portainer</h3>
+                    <p class="text-slate-400 text-xs mt-2">Managing the lifecycle of my Docker-based microservices and infrastructure.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="mb-20">
+            <div class="section-title">
+                <h2 class="text-3xl font-bold">Security Audits & Research</h2>
+                <p class="text-slate-400">Documenting vulnerabilities, hardening protocols, and defensive research.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass p-8 rounded-3xl opacity-40 grayscale">
+                    <div class="bg-red-600 p-4 rounded-2xl w-fit mb-6">
+                        <i data-lucide="shield-alert" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-300">Project Pending</h3>
+                    <p class="text-slate-500 text-sm mt-2 italic">Documentation on system hardening and penetration testing labs coming soon.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-20">
+            <div class="section-title">
+                <h2 class="text-3xl font-bold">Security Automation</h2>
+                <p class="text-slate-400">Programming and scripting solutions for defensive operations.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass p-8 rounded-3xl opacity-40 grayscale">
+                    <div class="bg-green-600 p-4 rounded-2xl w-fit mb-6">
+                        <i data-lucide="code-2" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-300">Project Pending</h3>
+                    <p class="text-slate-500 text-sm mt-2 italic">Python scripts for network monitoring and configuration management.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="text-center p-10 border-t border-slate-800 text-slate-500 text-sm">
+        <p>&copy; 2026 Amit Lev-Ari. Built for GitHub Pages.</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
