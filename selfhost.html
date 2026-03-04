@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Hosting | Amit Lev-Ari</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        .glass { background: rgba(30, 41, 59, 0.5); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.1); }
+        .section-title { border-left: 4px solid #3b82f6; padding-left: 1rem; margin-bottom: 2rem; }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white font-sans pb-20">
+
+    <nav class="glass sticky top-0 z-50 p-4 mb-12 border-b border-slate-700">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 hover:text-blue-400 transition-colors">
+                <i data-lucide="arrow-left" class="w-5 h-5"></i>
+                <span class="font-bold tracking-tighter text-lg">Back to Portfolio</span>
+            </a>
+            <div class="flex items-center gap-2">
+                <i data-lucide="server" class="text-blue-400 w-5 h-5"></i>
+                <span class="font-bold">Home Server Lab</span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-4xl mx-auto px-6">
+        <header class="mb-16">
+            <h1 class="text-5xl font-extrabold tracking-tight mb-4">Self-Hosted Infrastructure</h1>
+            <p class="text-slate-400 text-lg leading-relaxed">
+                A deep dive into the containerized services I manage to maintain data sovereignty and network security. My stack is built primarily on Linux using Docker and Portainer for orchestration.
+            </p>
+        </header>
+
+        <div class="space-y-12">
+            <section class="glass p-8 rounded-3xl border-purple-500/20">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="bg-purple-600 p-3 rounded-2xl">
+                        <i data-lucide="shield-check" class="w-6 h-6"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold">Nginx Proxy Manager</h2>
+                </div>
+                <p class="text-slate-300 mb-4">The gateway to my infrastructure. I use NPM to handle incoming traffic, manage Let's Encrypt SSL certificates, and provide secure reverse proxying for all internal services.</p>
+                <div class="flex gap-2">
+                    <span class="px-3 py-1 bg-slate-700 rounded-full text-xs font-mono">Reverse Proxy</span>
+                    <span class="px-3 py-1 bg-slate-700 rounded-full text-xs font-mono">SSL/TLS</span>
+                </div>
+            </section>
+
+            <section class="glass p-8 rounded-3xl border-blue-500/20">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="bg-blue-500 p-3 rounded-2xl">
+                        <i data-lucide="cloud" class="w-6 h-6"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold">Seafile</h2>
+                </div>
+                <p class="text-slate-300 mb-4">My primary private cloud solution. Selected for its high-performance file syncing and support for End-to-End Encryption (E2EE) to ensure sensitive data remains private.</p>
+                <div class="flex gap-2">
+                    <span class="px-3 py-1 bg-slate-700 rounded-full text-xs font-mono">E2EE</span>
+                    <span class="px-3 py-1 bg-slate-700 rounded-full text-xs font-mono">Cloud Storage</span>
+                </div>
+            </section>
+
+            <section class="glass p-8 rounded-3xl border-orange-500/20">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="bg-orange-600 p-3 rounded-2xl">
+                        <i data-lucide="image" class="w-6 h-6"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold">Immich</h2>
+                </div>
+                <p class="text-slate-300 mb-4">A high-performance media backup solution managed via Docker-compose. It provides a seamless way to back up photos and videos from mobile devices to my local hardware.</p>
+                <div class="flex gap-2">
+                    <span class="px-3 py-1 bg-slate-700 rounded-full text-xs font-mono">Docker Compose</span>
+                    <span class="px-3 py-1 bg-slate-700 rounded-full text-xs font-mono">Media Backup</span>
+                </div>
+            </section>
+
+            <section class="glass p-8 rounded-3xl border-cyan-500/20">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="bg-cyan-600 p-3 rounded-2xl">
+                        <i data-lucide="container" class="w-6 h-6"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold">Orchestration & Management</h2>
+                </div>
+                <p class="text-slate-300 mb-4">I use Portainer to manage the lifecycle of my containerized environment, alongside other services like Jellyfin for media and general server monitoring.</p>
+                <div class="flex gap-2">
+                    <span class="px-3 py-1 bg-slate-700 rounded-full text-xs font-mono">Portainer</span>
+                    <span class="px-3 py-1 bg-slate-700 rounded-full text-xs font-mono">Docker</span>
+                    <span class="px-3 py-1 bg-slate-700 rounded-full text-xs font-mono">Jellyfin</span>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer class="text-center p-10 mt-20 border-t border-slate-800 text-slate-500 text-sm">
+        <p>&copy; 2026 Amit Lev-Ari. Documentation of personal infrastructure.</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
